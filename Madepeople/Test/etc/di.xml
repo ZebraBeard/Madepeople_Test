@@ -1,0 +1,4 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Madepeople\Test\Api\OrdersRepositoryInterface" type="Madepeople\Test\Model\OrdersRepository" />
+    <preference for="Madepeople\Test\Api\Data\OrdersInterface" type="Madepeople\Test\Model\Orders" />
+</config>

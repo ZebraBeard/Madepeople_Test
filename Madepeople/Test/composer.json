@@ -1,0 +1,22 @@
+{
+    "name": "madepeople/module-test",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "r.menyaylo@gmail.com",
+            "name": "Ruslan Menyaylo"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Madepeople\\Test\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

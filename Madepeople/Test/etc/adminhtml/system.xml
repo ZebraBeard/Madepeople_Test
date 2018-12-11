@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="madepeople_test" sortOrder="2000">
+            <label>Madepeople</label>
+        </tab>
+        <section id="madepeople_test" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Orders Logger</label>
+            <tab>madepeople_test</tab>
+            <resource>Madepeople_Test::orders</resource>
+            <group id="orders_general" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Logging</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="order_multiplier" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Decimal Factor</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
